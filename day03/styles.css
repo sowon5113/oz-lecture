@@ -1,0 +1,56 @@
+* {
+    margin:0;
+    padding:0;
+}
+h2 {
+    color:blue;
+}
+h3 {
+    color:green;
+}
+.article-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#header {
+    background: darkgray;
+}
+
+#header > h1 {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 12px 2px 12px 20px;
+}
+
+[type="text"] {
+    border: 1px solid gary;
+}
+
+[herf*="example"] {
+    color: red;
+}
+
+#header .link {
+    padding: 12px 8px;
+}
+
+#header a {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
+}
+
+#contanier .container-item:hover {
+    background-color: white;
+}
+
+#container .container-item::before {
+    content: "* ";
+}
+
+#contaniner .container-item::after {
+    content: "!!!";
+}
+

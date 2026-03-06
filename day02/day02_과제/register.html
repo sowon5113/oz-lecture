@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>User Registration Form</title>
+    </head>
+    <body>
+        <header>
+            <img src="Google_logo.png">
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="blue" /></svg>
+            <nav style="display: flex; gap: 20px"> <!--네비게이션-->
+                <a href="home">Home</a>
+                <a href="register">Register</a>
+                <a href="about">About</a>
+            </nav>
+            <br>
+            <h1>User Registration</h1>
+        </header>
+        <main>
+            <div>
+                <form action="#" method="post"> <!--폼 시작-->
+                <div>
+                    <label for="email">이메일 </label>
+                    <input type="text" id="email" placeholder="이메일"><br> <!--이메일 입력-->
+                </div>
+                <div>
+                    <label for="password">비밀번호 </label>
+                    <input type="password" id="password" placeholder="비밀번호"><br> <!--비밀번호 입력-->
+                </div>
+                <div>
+                    <label for="birthday">생년월일 </label>
+                    <input type="date" id="birthday" placeholder="생년월일"><br> <!--생년월일 입력-->
+                </div>
+                <div>
+                    <label for="age">나이 </label>
+                    <input type="number" id="age" min="1" max="100" step="1" placeholder="나이"> <!--나이 입력-->
+                </div>
+            </div>
+            <div>
+                <h3>만족도를 입력해주세요.</h3> <!--만족도 입력-->
+                <input type="range" name="satisfaction" min="1" max="10">
+            </div>
+            <br>
+            <div>
+                <h3>성별을 입력해주세요.</h3> <!--성별 입력-->
+                <div>
+                    <input type="radio" id="user-gender-male" name="user-gender" value="male">
+                    <label for="user-gender-male">남성</label>
+                </div>
+                <div>
+                    <input type="radio" id="user-gender-female" name="user-gender" value="female">
+                    <label for="user-gender-female">여성</label>
+                </div>
+            </div>
+            <br>
+            <div>
+                <h3>취미는 무엇인가요?</h3> <!--취미 입력-->
+                <p>중복 체크 가능합니다.</p>
+                <input type="checkbox" name="hobby" value="coding">코딩
+                <input type="checkbox" name="hobby" value="gaming">게임
+                <input type="checkbox" name="hobby" value="reading">독서
+            </div>
+            <br>
+            <div>
+                <h3>국가를 선택해주세요.<br> <!--국가 입력-->
+                <select name="country">
+                    <option name="country" value="South Korea">대한민국</option>
+                    <option name="country" value="USA">미국</option>
+                    <option name="country" value="Japan">일본</option>
+                    <option name="country" value="China">중국</option>
+                    <option name="country" value="UK">영국</option>
+                </select>
+            </div>
+            <br>
+            <button type="submit">제출</button> <!--폼 제출-->
+            <button type="reset">초기화</button> <!--폼 재시작 초기화-->
+            </form>
+            <br><hr>
+                <selction>
+                    <h3>콘텐츠 영역</h3>
+                    <p>콘텐츠 영역 소개글 입니다.</p>
+                    <article>
+                        <h4>콘텐츠 영역 내 아티클 1번</h4>
+                        <p>아티클 내용입니다. 냉무입니다. 아래는 canvas를 추가했습니다.</p>
+                        <canvas id="myCanvas" width="300" height="150" style="border: 2px dashed #ff0000; background-color: #fff;"></canvas> <!--아티클을 캔버스 안에 넣고 싶은데 여기까지만...-->
+                    </article>
+                </selction>
+                    <aside>
+                        <h4>Contact Support</h4>
+                            <video controls width="560" type="video/mp4">
+                            <source src="mov_bbb.mp4">
+                        </video>
+                        <br>
+                        <audio controls>
+                            <source src="mov_bbb.mp4" type="audio/mp3">
+                            <source src="mov_bbb.wav" type="audio/wav">
+                        </audio>
+                        <br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wHsOU1_ZHmY?si=4MzwGHNZ9H2EQ8zo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </aside>
+        </main>
+        <hr>
+        <footer>
+            <p>&copy; 2025 Your Website <a href="tel:010-0000-0000">010-1234-1234</a>
+        </footer>
+        </main>
+    </body>
+</html>
+
+<p{color:blue;}>바보바보야</p>

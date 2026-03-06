@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #154ff0;
+    color: white;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+/* [Nav 설정] */
+/* nav ul {
+    list-style: none;
+    overflow: hidden;
+} */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    padding: 15px;
+    clear: left;
+}
+
+nav ul li a {
+    color: rgb(72, 157, 253);
+    text-decoration: none;
+}
+
+h2 {
+    color:#154ff0;
+}
+
+/* [메인 레이아웃 - Float & Clear] */
+.container {
+    padding: 20px;
+    overflow: hidden; /* 컨테이너가 float된 자식의 높이를 인식하도록 설정 */
+    border-color: white;
+    border-radius: 5px;
+}
+
+section.content {
+    float: left;
+    width: 70%;
+    background-color: #f5f7fc;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px
+}
+
+/* [Skill 섹션 전용 Grid 설정] */
+
+/* 1. 그리드 컨테이너 설정 */
+.company-grid .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* 2. 기존 float 속성 해제 및 너비 조정 */
+.company-grid .project {
+    float: none;      /* 기존 float 제거 */
+    width: 100%;      /* 그리드 셀 안을 가득 채우도록 설정 */
+    margin: 0;        /* 그리드 gap을 사용하므로 기존 margin 제거 */
+}
+
+aside.sidebar {
+    position: sticky; /* 스크롤 시 상단 고정 */
+    top: 100px;
+    float: right;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding: 50px;
+    border-left: 3px solid #007bff;
+    border-radius: 10px;
+}
+
+aside.sidebar h3 {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* [프로젝트 3열 레이아웃] */
+.project {
+    float: left;
+    width: 30%;
+    margin: 1.66%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-bottom: 2px; solid #333;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* [Footer - Float 해제] */
+footer {
+    clear: both; /* 위쪽 float 요소들의 영향력을 제거 */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}

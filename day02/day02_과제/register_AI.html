@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration Form</title>
+    <style>
+        /* 핵심 레이아웃 설정 */
+        main {
+            display: flex;       /* 가로 정렬 시작 */
+            gap: 40px;          /* 폼과 사이드바 사이의 간격 */
+            max-width: 1000px;  /* 전체 화면이 너무 넓어지지 않게 조절 */
+            margin: 0 auto;     /* 화면 중앙 정렬 */
+            padding: 20px;
+        }
+
+        form {
+            flex: 2;            /* 폼이 2만큼의 비율을 차지 */
+        }
+
+        aside {
+            flex: 1;            /* 사이드바가 1만큼의 비율을 차지 */
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            height: fit-content; /* 내용물 높이에 맞춤 */
+            border-left: 5px solid #007bff;
+        }
+
+        /* 입력창 줄바꿈을 위한 간단한 스타일 */
+        input, select {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header style="text-align: center;">
+        <img src="Google_logo.png" alt="Google Logo" style="width: 150px;">
+        <nav style="display: flex; gap: 20px; justify-content: center;">
+            <a href="home">Home</a>
+            <a href="register">Register</a>
+            <a href="about">About</a>
+        </nav>
+        <h1>User Registration</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <label for="email">이메일 </label><input type="email" id="email" name="email" placeholder="이메일"><br>
+            <label for="password">비밀번호 </label><input type="password" id="password" name="password" placeholder="비밀번호"><br>
+            <label for="birthday">생년월일 </label><input type="date" id="birthday" name="birthday"><br> 
+            <label for="age">나이 </label><input type="number" id="age" name="age" min="1" max="100" step="1" placeholder="나이">
+
+            <div>
+                <h3>만족도를 입력해주세요.</h3>
+                <input type="range" name="satisfaction" min="1" max="10" oninput="result.value = this.value">
+                <output id="result">5</output>점
+            </div>
+
+            <div>
+                <h3>성별을 입력해주세요.</h3>
+                <input type="radio" name="gender" value="male">남성
+                <input type="radio" name="gender" value="female">여성
+            </div>
+
+            <div>
+                <h3>취미는 무엇인가요?</h3>
+                <p>중복 체크 가능합니다.</p>
+                <input type="checkbox" name="hobby" value="coding">코딩
+                <input type="checkbox" name="hobby" value="gaming">게임
+                <input type="checkbox" name="hobby" value="reading">독서
+            </div>
+
+            <div>
+                <h3>국가를 선택해주세요.</h3>
+                <select name="country">
+                    <option value="South Korea">대한민국</option>
+                    <option value="USA">미국</option>
+                    <option value="Japan">일본</option>
+                    <option value="China">중국</option>
+                    <option value="UK">영국</option>
+                </select>
+            </div>
+            <br>
+            <button type="submit">제출</button>
+            <button type="reset">초기화</button>
+        </form>
+
+        <aside>
+            <h3>Registration Tips</h3>
+            <ul>
+                <li>비밀번호는 8자 이상, 특수문자를 포함해 주세요.</li>
+                <li>이메일 주소를 다시 한번 확인해 주세요.</li>
+            </ul>
+            <hr>
+            <h3>Contact Support</h3>
+            <p>📧 support@example.com</p>
+            <p>📞 010-0000-0000</p>
+        </aside>
+    </main>
+
+    <footer style="text-align: center; margin-top: 50px;">
+        <p>&copy; 2025 Your Website | <a href="tel:010-0000-0000">010-0000-0000</a></p>
+    </footer>
+</body>
+</html>
+
+
+<main style="display: flex; gap: 40px;"> <div style="flex: 2;"> <form action="#" method="post">
+            </form>
+
+        <br><hr>
+
+        <section>
+            <h3>콘텐츠 영역</h3>
+            <p>콘텐츠 영역 소개글 입니다.</p>
+            <article style="border: 1px solid #ccc; padding: 10px;">
+                <h4>콘텐츠 영역 내 아티클 1번</h4>
+                <p>아티클 내용입니다. 아래는 자바스크립트 없이 그린 도형(SVG)입니다.</p>
+                
+                <svg width="200" height="100" style="background-color: #f0f0f0;">
+                    <rect x="10" y="10" width="180" height="80" fill="red" stroke="black" stroke-width="2" />
+                    <text x="50%" y="55%" text-anchor="middle" fill="white">도형 영역</text>
+                </svg>
+            </article>
+        </section>
+    </div>
+
+    <aside style="flex: 1; background: #eee; padding: 15px;">
+        <h4>Contact Support</h4>
+        <p>상담이 필요하신가요?</p>
+    </aside>
+</main>
+
+
+<article>
+    <h4>콘텐츠 영역 내 아티클 1번</h4>
+    <p>아티클 내용입니다. 아래는 자바스크립트 없이 추가한 캔버스 영역입니다.</p>
+    
+    <canvas id="myCanvas" width="300" height="150" style="border: 2px dashed #ff0000; background-color: #fff;">
+        이 브라우저는 canvas 태그를 지원하지 않습니다. </canvas>
+    
+    <p><small>* 자바스크립트가 없어서 현재는 빈 테두리만 보입니다.</small></p>
+</article>

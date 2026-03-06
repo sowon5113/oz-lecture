@@ -1,0 +1,88 @@
+h1 {
+    font-size: 2rem;
+    margin:2vw;
+}
+
+header {
+    padding: 2rem;
+    background-color: lightblue;
+    border-bottom: 0.2rem solid #ccc;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 80vw;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.post {
+    border: 0.2rem solid #ccc;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+aside {
+    width: 25vw;
+    padding: 1.5rem;
+    margin-right: 2vw;
+    font-size: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 0.2rem solid #ccc;
+}
+
+@media screen and (min-width: 1023px) { /* 데스크탑 */
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    body {
+        max-width: 90vw;
+    }
+    #posts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    aside {
+        width: 30vw;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) { /* 모바일 */
+    nav ul {
+        display: grid;
+        grid-template-columns: 0.5rem;
+        gap: 1rem;
+    }
+    body {
+        max-width: 90vw;
+    }
+    #posts {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    aside {
+        width: 100%;
+        margin: 1rem;
+    }
+    
+}

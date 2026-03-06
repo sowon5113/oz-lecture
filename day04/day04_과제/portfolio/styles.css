@@ -1,0 +1,120 @@
+header {
+  padding: 20px;
+  border-bottom: 2px solid #333;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  padding: 10px;
+  float: left;
+  width: 60%;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+.project {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+#projects { /*flexbox*/
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* 화면 좁아지면 줄바꿈 */
+  gap: 20px;
+}
+
+.company {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+#companys { /*grid box*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  clear: both; /* 상단 float 영향 방지 */
+  margin-top: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+  clear: left;
+}
+
+section {
+  float: left;
+  width: 70%;
+}
+
+/* footer {
+  background-color: #ccc;
+} */
+
+footer p:first-child {
+  display: none;
+}
+
+footer {
+  clear: both;
+  color: rgb(165, 165, 165);
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  background-color: rgb(94, 94, 94);
+}
+
+aside {
+  position: relative;
+  padding: 10px;
+  border-left: 3px solid #007bff;
+  margin: 20px;
+  float: right;
+  width: 25%;
+}
+
+aside h3 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
