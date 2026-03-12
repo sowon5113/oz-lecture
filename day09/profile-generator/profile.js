@@ -58,7 +58,7 @@ console.log("typeof undefined:", typeof undefinedVariable);
 console.log("typeof null:", typeof nullVariable);
 console.log(null === undefined); // false
 
-// 템플릿 문자열
+// 백틱 템플릿 문자열
 let templateString = `안녕하세요, 저는 ${name}입니다. 나이는 ${age}살이고, 직업은 ${job}입니다. 제 취미는 ${hobbies.join(", ")}입니다.`;
 console.log(templateString);
 
