@@ -34,6 +34,7 @@ console.log(`영화 제목: ${movie4.title}, 감독: ${movie4.director}, 개봉 
 // 총 영화 수
 const totalMovies = 4; // 하드코딩된 영화 수
 console.log(`총 영화 수: ${totalMovies}`);
+console.log(``)
 
 // 영화 객체 배열 선언
 let movies = [];
@@ -62,6 +63,9 @@ function printMovies(movieArray) {
     var totalCount = movieArray.length; // var 사용 및 총 영화 수 출력
     console.log("Total Movies: " + totalCount);
 }
+
+// 영화 목록 전체 출력 실행 (for 함수 목록)
+printMovies(movies);
 
 // 영화 검색
 function searchGenre(movieArray,targetGenre) {
@@ -99,7 +103,7 @@ const calculateAverageYear = function(movieArray) {
     return (sum / movieArray.length).toFixed(1); // 소수점 첫째자리까지
 };
 
-// 통계 계산 (최신 영화 찾기, 화살표 함수)
+// 통계 계산 (최신 영화 찾기, 화살표 함수) - 배열 반복 reduce 활용해서 짤 수도 있음
 const findNewestMovie = (movieArray) => {
     if (movieArray.length === 0) return null;
     
@@ -111,9 +115,6 @@ const findNewestMovie = (movieArray) => {
     }
     return newest;
 };
-
-// 영화 목록 전체 출력 실행 (for 함수 목록)
-printMovies(movies);
 
 // 장르 검색 실행
 searchGenre(movies, "Action");
